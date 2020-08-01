@@ -1,0 +1,533 @@
+.body {
+    font-family: "Helvetica Neue Bold", Helvetica, Arial, sans-serif;
+}
+.container-fluid {
+    margin: 0;
+    padding: 0;
+}
+.main-menu {
+    background-color: black;
+    height: 50px;
+}
+.menu-logo img {
+    width: 90px;
+    border: 0;
+}
+#navbar{
+    font-family: "Helvetica 65 Medium", Helvetica, Arial, sans-serif;
+    color: #ccc !important;
+}
+#navbar:hover {
+    color: #fff !important;
+}
+.menu-cell {
+    border: none;
+}
+.nav-item {
+    margin-right: 25px;
+}
+.LoginView {
+    position: relative;
+    display: inline;
+    left: 800px;
+}
+.login-avatar {
+    margin-left: 18px;
+    width: 22px;
+    height: 22px;
+    border-radius: 4px;
+    background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAJIAAACSCAYAAACue5OOAAAAGXRFW…Lb3v8fO9HG5bivLQAAAAAAAAAAAAAAAAAAAAAAAEAy/BJgALflp8RlzZKkAAAAAElFTkSuQmCC") 50% no-repeat #edeef0;
+    background-size: cover;
+}
+.d-block {
+    z-index: 2;
+}
+.game-name {
+    z-index: 5;
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    top: 100px;
+    margin: 0;
+    padding: 0;
+    font-family: "Helvetica Neue Bold", Helvetica, Arial, sans-serif;
+}
+.game-name h2 {
+    font-size: 40px;
+    color: yellow;
+    text-shadow: black 0.1em 0.1em 0.3em;
+}
+.game-title{
+    z-index: 5;
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    top: 150px;
+    margin: 0;
+    padding: 0;
+    font-family: "Helvetica Neue Bold", Helvetica, Arial, sans-serif;
+
+}
+.game-title h1 {
+    font-size: 100px;
+    color: white;
+    text-shadow: black 0.1em 0.1em 0.3em;
+}
+.game-description {
+    z-index: 5;
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    top: 280px;
+    margin: 0;
+    padding: 0;
+    font-family: "Helvetica Neue Light", Helvetica, Arial, sans-serif;
+}
+.game-description p {
+    font-size: 25px;
+    color: white;
+    padding: 45px;
+}
+img { filter: brightness(50%);  }
+@media(min-width: 900px) {
+.jogos-do-momento h1 {
+    text-align: center;
+    background-color: #018AFF;
+    color: white;
+    margin: 10px 20%;
+    margin-bottom: 0;
+    padding: 25px 0;
+    font-family: "Helvetica Neue Bold", Helvetica, Arial, sans-serif;
+}
+}
+@media(max-width: 900px) {
+.jogos-do-momento h1 {
+    text-align: center;
+    background-color: #018AFF;
+    color: white;
+    margin: 10px 5%;
+    margin-bottom: 0;
+    padding: 25px 0;
+    font-family: "Helvetica Neue Bold", Helvetica, Arial, sans-serif;
+}
+}
+.jogos-do-momento .card-jogos {
+	background-repeat: no-repeat;
+	background-size: 100%;
+	height: 800px;
+    margin: 0 0;
+    padding: 0;
+    text-align: center;
+}
+.jogos-do-momento .title {
+	margin-top: 65%;
+    font-family: "Helvetica Neue Bold", Helvetica, Arial, sans-serif;
+    color: whitesmoke;
+    z-index: 5;
+    text-transform: uppercase;
+    font-size: 30px;
+    bottom: 0;
+	position: relative;
+}
+.jogos-do-momento .text {
+    font-family: "Helvetica Neue Light", Helvetica, Arial, sans-serif;
+    color: #bbb;
+    z-index: 5;
+    font-size: 18px;
+    margin-top: 50px;
+	margin-left: 25px;
+	margin-right: 25px;
+	position: relative;
+}
+.cardapio h1 {
+    text-align: center;
+    color: black;
+    margin: 10px 20%;
+    margin-bottom: 0;
+    padding: 25px 0;
+    font-family: "Helvetica Neue Bold", Helvetica, Arial, sans-serif;
+}
+.cardapio h4 {
+    font-family: "Helvetica Neue Bold", Helvetica, Arial, sans-serif;
+}
+.cardapio p {
+    font-family: "Helvetica Neue Light", Helvetica, Arial, sans-serif;
+}
+.cardapio span {
+    font-family: "Helvetica Neue Light", Helvetica, Arial, sans-serif;
+    font-weight: bold;
+    background-color: #018AFF;
+    color: white;
+    padding: 15px;
+    
+}
+.jogos-disponiveis h1 {
+    text-align: center;
+    background-color: #018AFF;
+    color: white;
+    margin: 10px 20%;
+    margin-bottom: 0;
+    padding: 30px 0;
+    font-family: "Helvetica Neue Bold", Helvetica, Arial, sans-serif;
+}
+.card {
+    border-radius: 0;
+}
+#coment-nav{
+    margin-left: 150px;
+    margin-right: 150px;
+    border-color: #018AFF;
+    color: #018AFF;
+}
+#nav-item{
+    border-color: #018AFF #018AFF WHITE #018AFF ;
+    font: #018AFF;
+}
+#sub-coment{
+
+   
+}
+
+.avatar{
+    width:68px; 
+    height:68px;
+    position: relative;
+}
+input{
+    border-radius: 0 !important;
+}
+button{
+    border-radius: 0 !important;
+    position: relative;
+    top: 6px;
+}
+/*
+.footer{
+    background-color: #1d1e22;
+    height: 250px;
+}
+#footerlogo{
+   
+    top: 80px;
+
+}
+.footerfont{
+    color:white;
+    position: relative;
+    top:80px;
+}
+.footerfont2{
+    color:white;
+    position: relative;
+    top:10px;
+}*/
+
+.footer{
+    background: #1d1e22;
+    color:white;
+    font-family: "Helvetica Neue Bold", Helvetica, Arial, sans-serif;
+} ul {list-style-type: none;}
+    .links{
+     
+
+   
+      }
+    }  
+    .about-company{
+      i{font-size: 25px;}
+      a{
+        color:white;
+        transition: color .2s;
+        &:hover{color:#4180CB}
+      }
+    } 
+    .location{
+      i{font-size: 18px;}
+    }
+    .copyright p{border-top:1px solid rgba(255,255,255,.1);} 
+  }
+  
+  li a{
+    color: white;
+    transition: color .2s;}
+
+
+    #fotofooter{
+        margin-bottom: 30px;
+    }
+
+    a:hover{
+        text-decoration:none;
+        
+        }
+        #wd-subtitle{
+            font-size: 80px;
+        }
+
+        @media(max-width:425px){
+            #abaixar{
+                margin-top:20px; }
+            #jogosmomento{
+                height: 2400px;
+            }
+                               }
+
+
+        @media(max-width:425px) and (min-width:376px){
+        #jogosmomento{
+            height: 2200px;}
+            #wd-title{
+                font-size: 25px;
+                font-family: "Helvetica Neue Bold", Helvetica, Arial, sans-serif;
+            
+            }
+            #wd-subtitle{
+               font-size: 35px;
+               font-family: "Helvetica Neue Bold", Helvetica, Arial, sans-serif;
+           }
+            #wd-description{
+                font-size: 30px;
+                padding: 0px 20px 0px 20px;
+            }
+            #wd-img{
+               width: 200px;
+               height: 700px;
+               object-fit: cover;
+            }
+            #fifa-title{
+               font-size: 30px;
+           }
+           #fifa-subtitle{
+              font-size: 35px;
+          }
+           #fifa-description{
+               font-size: 30px;
+               padding: 0px 20px 0px 20px;
+           }
+           #fifa-img{
+               width: 200px;
+               height: 700px;
+               object-fit: cover;
+           }
+           #r6-title{
+               font-size: 25px;
+           }
+           #r6-subtitle{
+              font-size: 35px;
+          }
+           #r6-description{
+               font-size: 30px;
+               padding: 0px 20px 0px 20px;
+           }
+           #r6-img{
+               width: 200px;
+               height: 700px;
+               object-fit: cover;
+           }
+           #fort-img{
+            height: 650px;
+        }
+        #fort-title{
+            margin-top: 25px;
+            font-size: 50px;
+        }
+        #fort-subtitle{
+            font-size: 20px;
+        }
+        #cs-img{
+            height: 650px;
+        }
+        #cs-title{
+            margin-top: 25px;
+            font-size: 50px;
+        }
+        #cs-subtitle{
+            font-size: 17px;
+        }
+        #pub-img{
+            height: 650px;
+        }
+        #pub-title{
+            margin-top: 25px;
+            font-size: 50px;
+        }
+        #pub-subtitle{
+            font-size: 17px;
+        }
+    }
+
+    @media(max-width:320px){
+    #jogosmomento{
+        height: 1600px;
+    }
+    .jogos-disponiveis h1 {
+        width: 220px;
+        font-size: 30px;
+     }
+     #wd-title{
+         font-size: 25px;
+         font-family: "Helvetica Neue Bold", Helvetica, Arial, sans-serif;
+     }
+     #wd-subtitle{
+        font-size: 35px;
+        font-family: "Helvetica Neue Bold", Helvetica, Arial, sans-serif;
+    }
+     #wd-description{
+         font-size: 30px;
+         padding: 0px 20px 0px 20px;
+     }
+     #wd-img{
+        width: 200px;
+        height: 700px;
+        object-fit: cover;
+     }
+     #fifa-title{
+        font-size: 30px;
+    }
+    #fifa-subtitle{
+       font-size: 35px;
+   }
+    #fifa-description{
+        font-size: 30px;
+        padding: 0px 20px 0px 20px;
+    }
+    #fifa-img{
+        width: 200px;
+        height: 700px;
+        object-fit: cover;
+    }
+    #r6-title{
+        font-size: 25px;
+    }
+    #r6-subtitle{
+       font-size: 35px;
+   }
+    #r6-description{
+        font-size: 30px;
+        padding: 0px 20px 0px 20px;
+    }
+    #r6-img{
+        width: 200px;
+        height: 700px;
+        object-fit: cover;
+    }
+    #fort-img{
+        height: 450px;
+    }
+    #fort-title{
+        margin-top: 25px;
+        font-size: 50px;
+    }
+    #fort-subtitle{
+        font-size: 20px;
+    }
+    #cs-img{
+        height: 450px;
+    }
+    #cs-title{
+        margin-top: 25px;
+        font-size: 50px;
+    }
+    #cs-subtitle{
+        font-size: 17px;
+    }
+    #pub-img{
+        height: 450px;
+    }
+    #pub-title{
+        margin-top: 25px;
+        font-size: 50px;
+    }
+    #pub-subtitle{
+        font-size: 17px;
+    }
+        }
+    @media(max-width:375px) and (min-width:321px){
+        #jogosmomento{
+            height: 1900px;
+        }
+        .jogos-disponiveis h1 {
+           width: 260px;
+        }
+        #wd-title{
+            font-size: 25px;
+            font-family: "Helvetica Neue Bold", Helvetica, Arial, sans-serif;
+        }
+        #wd-subtitle{
+           font-size: 35px;
+           font-family: "Helvetica Neue Bold", Helvetica, Arial, sans-serif;
+       }
+        #wd-description{
+            font-size: 30px;
+            padding: 0px 20px 0px 20px;
+        }
+        #wd-img{
+           width: 200px;
+           height: 700px;
+           object-fit: cover;
+        }
+        #fifa-title{
+           font-size: 30px;
+       }
+       #fifa-subtitle{
+          font-size: 35px;
+      }
+       #fifa-description{
+           font-size: 30px;
+           padding: 0px 20px 0px 20px;
+       }
+       #fifa-img{
+           width: 200px;
+           height: 700px;
+           object-fit: cover;
+       }
+       #r6-title{
+           font-size: 25px;
+       }
+       #r6-subtitle{
+          font-size: 35px;
+      }
+       #r6-description{
+           font-size: 30px;
+           padding: 0px 20px 0px 20px;
+       }
+       #r6-img{
+           width: 200px;
+           height: 700px;
+           object-fit: cover;
+       }
+       #fort-img{
+        height: 550px;
+    }
+    #fort-title{
+        margin-top: 25px;
+        font-size: 50px;
+    }
+    #fort-subtitle{
+        font-size: 20px;
+    }
+    #cs-img{
+        height: 550px;
+    }
+    #cs-title{
+        margin-top: 25px;
+        font-size: 50px;
+    }
+    #cs-subtitle{
+        font-size: 17px;
+    }
+    #pub-img{
+        height: 550px;
+    }
+    #pub-title{
+        margin-top: 25px;
+        font-size: 50px;
+    }
+    #pub-subtitle{
+        font-size: 17px;
+    }
+        }
+
+#seila{
+    font-size: 30px;
+}

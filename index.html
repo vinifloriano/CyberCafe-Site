@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Cyber Café</title>
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/flowtype.js"></script>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="fonts/style.css">
+    <link rel="stylesheet" href="fonts/style.js">
+</head>
+<body>
+    <div class="container-fluid">
+
+            <nav class="navbar navbar-expand-lg navbar-dark " style="background-color: black">
+            <a class="navbar-brand menu-logo" id="navbar" href="index.html"><img src="img/logo.png" alt="Cyber Café"></a>
+            <button class="navbar-toggler menu-cell" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Alterna navegação">
+                    <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse justify-content-center" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                            <a class="nav-link" href="#jogos-disponiveis">MAIS JOGOS</a>
+                            <a class="nav-link" href="#cardapio">CARDÁPIO</a>
+                            <a class="nav-link" href="#comentarios">COMUNIDADE</a>
+                    </div>
+            </div>
+        </nav>
+
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                <div class="game-name">
+                    <h2 id="fifa-title">FIFA 20</h2>
+                </div>
+                <div class="game-title">
+                    <h1 id="fifa-subtitle">SINTA O JOGO</h1>
+                </div>
+                <div class="game-description">
+                    <p id="fifa-description">Torne-se um jogador de futebol do seu time favorito, sinta na pele essa experência </p>
+                </div>
+                <img src="img/fifa20.jpg" class="d-block w-100" alt="..." height="800px" id="fifa-img">
+                </div>
+                <div class="carousel-item">
+                    <div class="game-name">
+                        <h2 id="wd-title">WATCH DOGS</h2>
+                    </div>
+                    <div class="game-title">
+                        <h1 id="wd-subtitle">HACKEIE TUDO A SUA VOLTA</h1>
+                    </div>
+                    <div class="game-description" > 
+                        <p id="wd-description">Seja bem vindo à evolução dos NPCs: APC. Todos personagens jogáveis.</p>
+                    </div>
+                <img src="img/watchdogs-legion.jpg" class="d-block w-100" alt="..." height="800px" id="wd-img">
+                </div>
+                <div class="carousel-item">
+                    <div class="game-name">
+                        <h2 id="r6-title">RAINBOW SIX SIEGE</h2>
+                    </div>
+                    <div class="game-title">
+                        <h1 id="r6-subtitle">TIRO PORRADA E BOMBA</h1>
+                    </div>
+                    <div class="game-description">
+                        <p id="r6-description">Prove essa experência desse FPS multiplayer, com ação constante,estratégia e trabalho em equipe</p>
+                    </div>
+                <img src="img/Rainbow.jpg" class="d-block w-100" alt="..." height="800px" id="r6-img">
+                </div>
+            </div>
+            </div>
+        <div class="jogos-do-momento" id="jogosmomento"><br><br><br>
+            <h1>JOGOS DO MOMENTO</h1>
+            <div class="row w-100 m-0">
+                <div class="col-md-4 col-sm-12 card-jogos p-0 m-0" style="background-image: url('img/fortnite.jpg')" id="fort-img">
+                    <div class="body">
+                        <h5 class="title" ><p id="fort-title">Fortnite</p></h5>
+                        <p class="text" ><span id="fort-subtitle">O battle-royale com construção e multiplayer mais famoso do mundo!</span></p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-12 card-jogos p-0 m-0" style="background-image: url('img/csgo.jpg')" id="cs-img">
+                    <div class="body">
+                        <h5 class="title"><p id="cs-title">CS:GO</p></h5>
+                        <p class="text"><span id="cs-subtitle">O FPS mais conhecido e jogado nas lan-houses! Muito bom para jogar com os amigos!</span></p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-12 card-jogos p-0 m-0" style="background-image: url('img/pubg.jpg')" id="pub-img">
+                    <div class="body">
+                        <h5 class="title"><p id="pub-title">PUBG</p></h5>
+                        <p class="text"><span id="pub-subtitle">Battle royale para aqueles que buscam uma maior ação</span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="cardapio" id="cardapio">
+            <h1>CARDAPIO CYBER CAFÉ</h1>
+            <div class="row" style="margin: 40px 10%">
+                <div class="col-md-3 col-sm-6 ">
+                    <img src="img/suco.jpg" class="w-100">
+                </div>
+                <div class="col-md-3 col-sm-6 mb-4">
+                    <h4>Suco de Maracujá</h4>
+                    <p>Um suco maravilhoso e top.</p>
+                    <span >R$5,00</span>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <img src="img/salgado.jpg" class="w-100">
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <h4>Salgadão</h4>
+                    <p>Um salgado maravilhoso e top.</p>
+                    <span>R$5,00</span>
+                </div>
+            </div>
+            <div class="row" style="margin: 40px 10%">
+                <div class="col-md-3 col-sm-6">
+                    <img src="img/coca.jpg" class="w-100">
+                </div>
+                <div class="col-md-3 col-sm-6 mb-4">
+                    <h4>Coca-cola</h4>
+                    <p>Uma coca maravilhosa e top.</p>
+                    <span>R$5,00</span>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <img src="img/coxinha.jpg" class="w-100">
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <h4>Coxona</h4>
+                    <p>Uma coxinha maravilhosa e top.</p>
+                    <span>R$5,00</span>
+                </div>
+            </div>
+            <div class="row" style="margin: 40px 10%">
+                <div class="col-md-3 col-sm-6">
+                    <img src="img/cafe.jpg" class="w-100">
+                </div>
+                <div class="col-md-3 col-sm-6 mb-4">
+                    <h4>Café</h4>
+                    <p>Uma café maravilhosa e top.</p>
+                    <span>R$5,00</span>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <img src="img/bolo.jpg" class="w-100">
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <h4>Bolo</h4>
+                    <p>Um bolo maravilhosa e top.</p>
+                    <span>R$5,00</span>
+                </div>
+            </div>
+        </div>
+        <div class="jogos-disponiveis text-center" id="jogos-disponiveis"><br><br>
+            <h1>JOGOS DISPONÍVEIS EM NOSSO CYBER CAFÉ</h1>
+            <div class="row m-0 p-0">
+                <div class="col-md-2 col-sm-4 m-0 p-0">
+                    <div class="card" style="width: 100%;">
+                        <img src="img/battlefield.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h2 align="center" id="seila">Battlefield</h2>
+                            <p class="card-text">Um FPS ambientado na Segunda Guerra Mundial com muita ação</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-2 col-sm-4 m-0 p-0">
+                    <div class="card" style="width: 100%;">
+                        <img src="img/gta5.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h2 align="center" id="seila">GTA 5</h2>
+                            <p class="card-text">Explore nessa aventura uma experiência de criminalidade muito real!</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-2 col-sm-4 m-0 p-0">
+                    <div class="card" style="width: 100%;">
+                        <img src="img/reddeadredemption.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h2 align="center" id="seila">RDR</h2>
+                            <p class="card-text">YEEEEAH I'M GONNA TAKE MY HORSE TO THE OLD TOWN ROAD</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-2 col-sm-4 m-0 p-0">
+                    <div class="card" style="width: 100%;">
+                        <img src="img/needforspeed.jpg" class="card-img" style="border: none">
+                        <div class="card-body">
+                            <h2 align="center" id="seila">NFS</h2>
+                            <p class="card-text">LA MAQUINA MAS BLOZ DE TOTE ITALIE VRUM VRUM</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-2 col-sm-4 m-0 p-0">
+                    <div class="card" style="width: 100%;">
+                        <img src="img/csgo2.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h2 align="center" id="seila">CSGO</h2>
+                            <p class="card-text">MAMA MIA MARCELLO THIS IS NOT YOU HOLD A PISTOL!</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-2 col-sm-4 m-0 p-0">
+                    <div class="card" style="width: 100%;">
+                        <img src="img/gearsofwar.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h2 align="center" id="seila">Gears of War</h2>
+                            <p class="card-text">JOGO DE XBOX, NINGUÉM LIGA, CONSOLE RUIM</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+        <br>
+        <br>
+        <h1 class="text-center">COMUNIDADE</h1>
+        <div class="cardapio" id="comentarios" >
+            
+            <br>
+            <form class="form-group row justify-content-center" id="sub-coment">
+           
+                
+                <div class="ml-1 col-md-2">
+                    <label for="exampleInputEmail1">Nome</label>
+                    <input type="text" class="form-control"  name="name-coment" id="input-name"  placeholder="Escreva o seu nome">
+                </div>
+                <div class="ml-1 col-md-2 col-sm-10">
+                    <label for="exampleInputEmail1">Idade</label>
+                    <input type="number" min = 1 max= 100 class="form-control" id="exampleInputEmail1" name="idade-coment"   placeholder="Informe a sua idade">
+                </div>
+                <div class="ml-1 col-md-2 col-sm-10">
+                    <label for="exampleInputEmail2">Comentário</label>
+                    <input type="text" class="form-control" id="exampleInputEmail2" name="coment"   placeholder="Escreva o seu comentário...">
+                </div>
+                <div class="ml-1 col-md-2 col-sm-10 mt-md-4 mt-sm-2">
+                    
+                    <button type="submit" class="btn btn-primary" id="sub-coment">Enviar</button>
+                </div>
+            
+            </form>
+        <div class="container">
+            <div class="row ml-3">
+                <div class="col-md-1">
+                <img src="img/avatar.png" class="avatar">
+                </div>
+                <div class="col-11">
+                <b>Mario, 16 anos</b><br>
+                CARACOLIS, que site maneiro, mal posso esperar pra visitar esse Cyber Café
+                <br><b>16/11 at 10a.m</b>
+                </div>
+            </div>
+            <br>
+            <div class="row ml-3">
+                <div class="col-md-1">
+                <img src="img/avatar.png" class="avatar">
+                </div>
+                <div class="col-11">
+                <b>João Vitor, 16 anos</b><br>
+                CARACOLIS, que site maneiro, mal posso esperar pra visitar esse Cyber Café
+                <br><b>16/11 at 10a.m</b>
+                </div>
+            </div>
+            <br>
+            <div class="row ml-3">
+                <div class="col-md-1">
+                <img src="img/avatar.png" class="avatar">
+                </div>
+                <div class="col-11">
+                <b>Juliana, 16 anos</b><br>
+                CARACOLIS, que site maneiro, mal posso esperar pra visitar esse Cyber Café
+                <br><b>16/11 at 10a.m</b>
+                </div>
+            </div>
+            <br>
+            <div class="row ml-3">
+                <div class="col-md-1">
+                <img src="img/avatar.png" class="avatar">
+                </div>
+                <div class="col-md-11">
+                <b>Roberto, 56 anos</b><br>
+                CARACOLIS, que site maneiro, mal posso esperar pra visitar esse Cyber Café
+                <br><b>16/11 at 10a.m</b>
+                </div>
+            </div>
+            <br>
+            <div class="row ml-3">
+                <div class="col-md-1">
+                <img src="img/avatar.png" class="avatar">
+                </div>
+                <div class="col-11">
+                <b>Anna, 18 anos</b><br>
+                CARACOLIS, que site maneiro, mal posso esperar pra visitar esse Cyber Café
+                <br><b>16/11 at 10a.m</b>
+                </div>
+            </div>
+            <br>
+        </div>
+        <br><br>
+        <!-- Espaço para o queridissimo Stephanto Trabalhar -->
+
+        <footer class="text-center">
+            <div class="mt-5 pt-5 pb-5 footer">
+                <div class="container">
+                  <div class="row">
+                    <div class="col-lg-5 col-xs-12 about-company">
+                        <a href="index.html"><img src="img/logo.png" alt="Cyber Café" id="fotofooter" height="150"></a><br>
+                      <!-- <p class="pr-5 text-white-50">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ac ante mollis quam tristique convallis </p>                    --></div>
+                    <div class="col-lg-3 col-xs-12 links">
+                      <h4 class="mt-lg-0 mt-sm-3" >Navegação</h4>
+                        <ul class="m-0 p-0">
+                          <li><a href="#jogos-disponiveis">MAIS JOGOS</a></li>
+                          <li><a href="#cardapio">CARDÁPIO</a></li>
+                          <li><a href="#comentarios">COMUNIDADE</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-4 col-xs-12 location ">
+                      <h4 class="mt-lg-0 mt-sm-4" id="abaixar">Endereço</h4>
+                      <p>Naquela rua lá,123</p>
+                      <h4 class="mt-lg-0 mt-sm-4">Telefone</h4>
+                      <p class="mb-0"><i class="fa fa-phone mr-3"></i>(11) 4002-8922</p>
+                    </div>
+                  </div>
+                  <div class="row mt-3" >
+                    <div class="col copyright" id="abaixar">
+                      <p class=""><small class="text-white-50" >© 2019. Todos os direitos reservados</small></p>
+                    </div>
+                  </div>
+                </div>
+                </div>
+        </footer>
+        <!-- <footer>
+            <div class="container-fluid footer" id="container-rodape">
+                <div class="container text-center">
+                    <div class="row">
+                        
+                        <div class="col-xs-12 com-sm-12 col-md-4 col-lg-4">
+                            <a class="navbar-brand menu-logo" id="footerlogo" href="index.html"><img src="img/logo.webp" alt="Cyber Café"></a>
+                        </div>
+                        <div class="col-xs-12 com-sm-12 col-md-4 col-lg-4">
+                                <ul class="navbar-nav">
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#jogos-disponiveis">MAIS JOGOS</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#cardapio">CARDÁPIO</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#comentarios  ">COMUNIDADE</a>
+                                        </li>
+                                    </ul>
+                        </div>
+                        <div class="col-xs-12 com-sm-12 col-md-4 col-lg-4">
+                            <p class="footerfont">Todos os direitos reservados</p>
+                        </div><br>
+                        <div class="col-xs-12 com-sm-12 col-md-4 col-lg-4">
+                                <p class="footerfont2">Desenvolvido por Splash Shark</p>
+                        </div>
+                    
+                    </div>
+                </div>
+            </div>
+        </footer> -->
+</body>
+</html>
+<script>
+
+
+$(window).focus(function(){
+	document.title = "Cyber Café";
+});
+$(window).blur(function(){
+	document.title = "Volte aqui!";
+});
+
+
+
+
+$('h5').flowtype({
+   minFont   : 27,
+   maxFont   : 120,
+   fontRatio : 12
+});
+$('.text').flowtype({
+   minFont   : 12,
+   maxFont   : 100,
+   fontRatio : 20
+});
+
+$('.nav-link').on('click', function(e) {
+  e.preventDefault();
+  var id = $(this).attr('href'),
+  targetOffset = $(id).offset().top;
+    
+  $('html, body').animate({ 
+    scrollTop: targetOffset - 100
+  }, 500);
+});
+ 
+function obrigado(){
+    alert("Obrigado! Seu comentário foi enviado, analisaremos para colocarmos em nosso site");
+ }
+</script>
